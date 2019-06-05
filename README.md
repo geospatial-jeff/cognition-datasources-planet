@@ -1,4 +1,4 @@
-**Add CircleCI badge to first line of file**
+[![CircleCI](https://circleci.com/gh/geospatial-jeff/cognition-datasources-planet.svg?style=svg)](https://circleci.com/gh/geospatial-jeff/cognition-datasources-planet)
 
 ## PlanetData
 
