@@ -128,10 +128,12 @@ class PlanetData(Datasource):
             )
 
         planet_request = api.filters.build_search_request(planet_query, kwargs['subdatasets'])
+        planet_request.update({'limit': limit})
         self.manifest.searches.append([self, planet_request])
 
     def execute(self, api_request):
-        response = client.quick_search(api_request)
+        page_size = api_request.pop('limit')
+        response = client.quick_search(api_request, page_size=page_size)
         content = json.loads(response.get_raw())
 
         stac_items = []
