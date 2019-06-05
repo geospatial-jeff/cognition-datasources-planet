@@ -1,4 +1,4 @@
-FROM cognition-datasources-dev:latest
+FROM cognition-datasources:latest
 
 COPY requirements*.txt ./
 
