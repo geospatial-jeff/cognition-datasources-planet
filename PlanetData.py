@@ -10,8 +10,6 @@ from datasources.sources.base import Datasource
 from planet import api
 from planet.api import filters
 
-os.environ['PL_API_KEY'] = 'cccee1c342ae484d8f4034bd3b9d6b24'
-
 pl_api_key = os.environ['PL_API_KEY']
 
 client = api.ClientV1()
